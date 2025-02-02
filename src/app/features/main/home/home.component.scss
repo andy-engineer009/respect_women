@@ -1,0 +1,114 @@
+.hero_section {
+    background: #F596BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        background: url('../../../../assets/images/women-vector.svg') no-repeat;
+        position: absolute;
+        width: 325px;
+        height: 353px;
+        bottom: 0;
+        opacity : .2;
+    }
+
+    @media (min-width: 767px) {
+        height: 100vh;
+    }
+
+    @media (min-width: 0px) and (max-width: 700px) {
+       padding: 30px;
+    }
+    .content {
+        text-align: center;
+        margin: 0px auto;
+        position: relative;
+        z-index: 1;
+        @media (min-wdth: 700px) {
+            max-width: 50%;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+        }
+    }
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.9;
+    font-weight: 500;
+}
+
+// 2nd section
+.text-highlighter {
+    position: relative;
+    &::after {
+        content: "";
+        background: url('../../../../assets/images/text-highlight.svg') no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-position: center 60%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        white-space: nowrap;
+        top: 0;
+        bottom: 0;
+    }
+}
+.text-highlighter-blue {
+    position: relative;
+    &::after {
+        content: "";
+        background: url('../../../../assets/images/sky-highlighter-vector.svg') no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-position: center 60%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        white-space: nowrap;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+//3rd section
+.list-with-flower-tag {
+    li{
+        position: relative;
+        padding-left: 28px;
+        font-size: 18px;
+        line-height: 1.9;
+        font-weight: 500;
+        margin-bottom: 10px;
+        &::after {
+            content: "";
+            background: url('../../../../assets/images/flower-vector.svg') no-repeat;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 4px;
+            left: 0;
+            background-size: 100%;
+        }
+    }
+}
+
+.powered_by_section {
+    figure {
+        @media (max-width: 767px) {
+            height: 365px;
+            overflow: hidden;
+            margin-top: -36px;
+        }
+        img {
+            width: 100%;
+            transform: rotate(269deg);
+        }
+    }
+}
