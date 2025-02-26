@@ -112,3 +112,22 @@ p {
         }
     }
 }
+
+
+
+.container-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .countdown {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
